@@ -1,0 +1,60 @@
+/* part 1 */
+head{
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&family=Rubik&display=swap"
+    rel="stylesheet">
+}
+body{
+    ont-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.about-camera{ 
+    display: flex;
+}
+.camera{
+    width: 50%;
+}
+.camera-img{ width: 450px;
+
+height: 400px;
+padding-left: 50px;
+}
+.link{
+     text-decoration: none;
+     background-color: rgb(10, 121, 69);
+     border-radius: 25px;
+    display:inline-block;
+    position:absolute;
+   text-align: center;
+    color: white;
+    padding: 14px 25px;
+
+}
+/*-------------------------- part2-------------------- */
+
+.fa-star{color: rgb(228, 187, 51);}
+.hedding-second{ text-align: center;}
+.instrument{
+    display: grid;
+    
+}
+.link-two{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+    text-align: right;
+
+}
+
+/* extra-part-------------------------------------------------- */
+.photography{ 
+    display: flex;
+
+}
+.wld-photo{
+    width: 50%;
+    padding-left: 100px;
+}
+.footer-heading{
+    text-align: center;
+}
+   
