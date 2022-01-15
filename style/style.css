@@ -40,6 +40,7 @@ body {
 
 .about-camera {
     display: flex;
+
 }
 
 .camera {
@@ -135,6 +136,15 @@ body {
 
     .instruments {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .about-camera{
+        flex-direction: column-reverse;
+    }
+    .photography{
+        flex-direction: column;
+    }
+    nav >ul{
+        display: none;
     }
 
 }
