@@ -1,60 +1,140 @@
-/* part 1 */
-head{
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500&family=Rubik&display=swap"
-    rel="stylesheet">
+nav {
+    display: flex;
+    justify-content: space-between;
 }
-body{
-    ont-family: 'Roboto', sans-serif;
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0 10px;
+
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav li:hover {
+    background-color: lightslategray;
+}
+
+
+
+
+/*----------- part 1 */
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     line-height: 1.5em;
 }
-.about-camera{ 
+
+.about-camera {
     display: flex;
 }
-.camera{
+
+.camera {
     width: 50%;
 }
-.camera-img{ width: 450px;
 
-height: 400px;
-padding-left: 50px;
+.camera-img {
+
+    width: 450px;
+
+    height: 400px;
+    padding-left: 50px;
+    transition: transform .3s;
 }
-.link{
-     text-decoration: none;
-     background-color: rgb(10, 121, 69);
-     border-radius: 25px;
-    display:inline-block;
-    position:absolute;
-   text-align: center;
+
+.camera-img:hover {
+    transform: scale(1.2);
+}
+
+.link {
+    text-decoration: none;
+    background-color: rgb(10, 121, 69);
+    border-radius: 25px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
     color: white;
     padding: 14px 25px;
 
 }
+
 /*-------------------------- part2-------------------- */
 
-.fa-star{color: rgb(228, 187, 51);}
-.hedding-second{ text-align: center;}
-.instrument{
+.instruments {
     display: grid;
-    
+    grid-template-columns: repeat(3, 1fr);
+
 }
-.link-two{
+
+.instrument {
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0003;
+    height: 80%;
+    width: 70%;
+    margin: 20%;
+    padding: 8%;
+    display: flex;
+
+}
+
+.fa-star {
+    color: rgb(228, 187, 51);
+}
+
+.hedding-second {
+    text-align: center;
+}
+
+.instrument {
+    display: grid;
+
+}
+
+.link-two {
     text-decoration: none;
     color: rgb(255, 0, 0);
     text-align: right;
+    display: block;
+    margin-top: 50px;
 
 }
 
 /* extra-part-------------------------------------------------- */
-.photography{ 
+.photography {
     display: flex;
 
 }
-.wld-photo{
+
+.wld-photo {
     width: 50%;
     padding-left: 100px;
 }
-.footer-heading{
+
+.footer-heading {
     text-align: center;
 }
-   
+
+/* media quarey----------------------------------------mobile devices */
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .instruments {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
